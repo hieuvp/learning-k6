@@ -8,4 +8,5 @@ trash tests/k6
 cd tests/postman
 postman-to-k6 collection.json \
   --environment=environment.json \
+  --separate \
   --output=../k6/script.js
