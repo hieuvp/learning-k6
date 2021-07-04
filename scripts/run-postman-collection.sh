@@ -14,3 +14,12 @@ set -eoux pipefail
     --separate \
     --output=../k6/script.js
 )
+
+(
+  cd tests/k6
+
+  k6 run \
+    --vus=10 \
+    --duration=20s \
+    script.js
+)
