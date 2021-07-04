@@ -1,3 +1,6 @@
 [submodule "operator"]
 	path = operator
 	url = https://github.com/k6io/operator.git
+[submodule "k6"]
+	path = k6
+	url = https://github.com/k6io/k6.git
