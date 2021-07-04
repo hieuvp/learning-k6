@@ -1,0 +1,11 @@
+apiVersion: k6.io/v1alpha1
+kind: K6
+metadata:
+  name: k6-sample
+spec:
+  parallelism: 4
+  script: postman-collection-test
+
+  # Whether the operator should allow multiple k6 jobs to run concurrently at the same node.
+  # The default value for this property is false, allowing each node to run multiple jobs.
+  separate: false

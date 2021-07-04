@@ -2,6 +2,9 @@
 
 set -eoux pipefail
 
+# Load Testing Your API with Postman
+# https://k6.io/blog/load-testing-with-postman-collections/
+
 (
   # Converts Postman collections to k6 script code
   # https://github.com/k6io/postman-to-k6
