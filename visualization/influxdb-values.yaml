@@ -1,0 +1,11 @@
+image:
+  tag: 1.8.0
+
+auth:
+  enabled: false
+
+influxdb:
+  initdbScripts:
+    my_init_script.sh: |
+      #!/bin/sh
+      influx -execute 'CREATE DATABASE k6'
