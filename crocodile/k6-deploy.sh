@@ -2,6 +2,9 @@
 
 set -eoux pipefail
 
+# Running distributed k6 tests on Kubernetes
+# https://k6.io/blog/running-distributed-tests-on-k8s/
+
 kubectl delete namespace k6-test || true
 kubectl create namespace k6-test
 
