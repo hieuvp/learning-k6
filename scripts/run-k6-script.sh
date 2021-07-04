@@ -2,11 +2,10 @@
 
 set -eoux pipefail
 
-# cd tests/k6
-# k6 run script.js
+trash /tmp/learning-k6
+mkdir --parents /tmp/learning-k6
+jsonnet k6-config.jsonnet >/tmp/learning-k6/k6-config.json
 
-# Virtual Users (VUs)
 k6 run \
-  --vus=10 \
-  --duration=30s \
+  --config=/tmp/learning-k6/k6-config.json \
   k6-script.js
