@@ -5,7 +5,10 @@ metadata:
 spec:
   parallelism: 4
   script: test-with-visualization
-  arguments: --out influxdb=http://influxdb:8086/k6
+
+  # k6 loves Grafana
+  # https://k6.io/blog/k6-loves-grafana/
+  arguments: --vus=8 --duration=60s --out influxdb=http://influxdb:8086/k6
 
   # Whether the operator should allow multiple k6 jobs to run concurrently at the same node.
   # The default value for this property is false, allowing each node to run multiple jobs.
