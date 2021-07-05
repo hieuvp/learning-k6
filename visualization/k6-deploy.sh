@@ -44,7 +44,7 @@ kubectl apply \
 set +x
 
 printf "\nkubectl port-forward --namespace=k6-test svc/grafana 3000:3000\n"
-printf "Grafana     : http://127.0.0.1:3000 (admin/admin)\n"
+printf "Grafana     : http://127.0.0.1:3000 (admin/admin)\n\n"
 
 # Use InfluxDB as data source
 printf "Data Source : http://influxdb:8086/k6\n"
