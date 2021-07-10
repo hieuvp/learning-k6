@@ -4,7 +4,11 @@ metadata:
   name: k6-sample
 spec:
   parallelism: 4
-  script: postman-collection-test
+  script:
+    configMap:
+      name: postman-collection-test
+      file: test.js
+
   arguments: --vus=8 --duration=20s
 
   # Whether the operator should allow multiple k6 jobs to run concurrently at the same node.

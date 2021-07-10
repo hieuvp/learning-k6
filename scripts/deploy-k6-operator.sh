@@ -7,7 +7,7 @@ set -eoux pipefail
 
 minikube start --driver=virtualbox
 
-# https://github.com/k6io/operator/tree/v0.0.4
+# https://github.com/k6io/operator/tree/v0.0.6
 cd operator
 
 make deploy

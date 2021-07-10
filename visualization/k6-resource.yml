@@ -4,7 +4,10 @@ metadata:
   name: k6-sample
 spec:
   parallelism: 4
-  script: test-with-visualization
+  script:
+    configMap:
+      name: test-with-visualization
+      file: test.js
 
   # k6 loves Grafana
   # https://k6.io/blog/k6-loves-grafana/
