@@ -4,3 +4,6 @@
 [submodule "k6"]
 	path = k6
 	url = https://github.com/k6io/k6.git
+[submodule "newman-ci"]
+	path = newman-ci
+	url = git@gitlab.com:vdespa/postman-tests.git
